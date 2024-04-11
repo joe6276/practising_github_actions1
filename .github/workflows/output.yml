@@ -1,0 +1,8 @@
+name: Output Issues
+on: [issues, workflow_dispatch]
+jobs:
+    output: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output any Context Metadata
+              run: echo "${{github}}"
